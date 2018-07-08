@@ -48,59 +48,32 @@ Array.from(trash).forEach(function(element) {
 
 
 
-var tarrot1 = 0;
-var tarrot2 = 0;
-var tarrot3 = 0;
+var card1 = 0;
+var card2 = 0;
+var card3 = 0;
 
 var cards =
 
-["img/chariot.jpg", "img/cups.jpg", "img/cups02.jpg", "img/cups03.jpg", "img/cups04.jpg",
-
-"img/cups05.jpg","img/cups06.jpg","img/cups07.jpg","img/cups08.jpg", "img/cups09.jpg",
-
-"img/cups10.jpg", "img/cups11.jpg", "img/cups12.jpg", "img/cups13.jpg", "img/cups14.jpg",
-
-"img/death.jpg", "img/devil.jpg", "img/emperor.jpg", "img/empress.jpg", "img/fool.jpg",
-
-"img/hangedman.jpg", "img/hermit.jpg", "img/hierophant.jpg", "img/highpriestess.jpg",
-
-"img/judgement.jpg", "img/justice.jpg", "img/lovers.jpg", "img/magician.jpg", "img/moon.jpg",
-
-"img/pentacles.jpg", "img/pentacles02.jpg", "img/pentacles03.jpg", "img/pentacles04.jpg",
-
-"img/pentacles05.jpg", "img/pentacles06.jpg", "img/pentacles07.jpg", "img/pentacles08.jpg",
-
-"img/pentacles09.jpg", "img/pentacles10.jpg", "img/pentacles11.jpg", "img/pentacles12.jpg",
-
-"img/pentacles13.jpg", "img/pentacles14.jpg", "img/star.jpg", "img/strength.jpg", "img/sun.jpg",
-
-"img/swords.jpg", "img/swords02.jpg", "img/swords03.jpg", "img/swords04.jpg", "img/swords05.jpg",
-
-"img/swords06.jpg", "img/swords07.jpg", "img/swords08.jpg", "img/swords09.jpg", "img/swords10.jpg",
-
-"img/swords11.jpg", "img/swords12.jpg", "img/swords13.jpg", "img/swords14.jpg", "img/temperance.jpg",
-
-"img/tower.jpg", "img/wands.jpg", "img/wands02.jpg", "img/wands03.jpg", "img/wands04.jpg", "img/wands05.jpg",
-
-"img/wands06.jpg", "img/wands07.jpg", "img/wands08.jpg", "img/wands09.jpg", "img/wands10.jpg", "img/wands11.jpg",
-
-"img/wands12.jpg", "img/wands13.jpg", "img/wands14.jpg", "img/wheeloffortune.jpg", "img/world.jpg"]
+["card1.jpg", "card2.jpeg", "card3.jpeg", "card4.jpeg", "card5.jpeg", "card6.jpeg",
+"card7.jpeg", "card8.jpeg", "card9.jpeg", "card10.jpeg", "card11.jpeg", "card12.jpg",
+"card13.jpeg", "card14.jpeg", "card15.jpeg", "card16.jpeg", "card17.jpeg", "card18.jpeg",
+"card19.jpeg", "card20.jpg", "card21.jpg", "card22.jpeg"]
 
 document.getElementById("button").onclick = function(){
 
 
-  tarrot1 = cards[Math.floor(Math.random() * cards.length)]
-  tarrot2 = cards[Math.floor(Math.random() * cards.length)]
-  tarrot3 = cards[Math.floor(Math.random() * cards.length)]
+  card1 = cards[Math.floor(Math.random() * cards.length)]
+  card2 = cards[Math.floor(Math.random() * cards.length)]
+  card3 = cards[Math.floor(Math.random() * cards.length)]
 
-  if (tarrot1 == tarrot2 || tarrot1 == tarrot3){
-  tarrot1 = cards[Math.floor(Math.random() * cards.length)]
-  }else if(tarrot2 == tarrot3){
-  tarrot2 = cards[Math.floor(Math.random() * cards.length)]
+  if (card1 == card2 || card1 == card3){
+  card1 = cards[Math.floor(Math.random() * cards.length)]
+}else if(card2 == card3){
+  card2 = cards[Math.floor(Math.random() * cards.length)]
   }
 
-  document.getElementById("past").src = tarrot1
-  document.getElementById("present").src = tarrot2
-  document.getElementById("future").src = tarrot3
+  document.getElementById("past").src = card1
+  document.getElementById("present").src = card2
+  document.getElementById("future").src = card3
 
 }

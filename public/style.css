@@ -1,5 +1,5 @@
 body{
-  background-color: pink;
+  background-color: purple;
   padding-top:80px;
   word-wrap:break-word;
   margin: 0 auto;
@@ -20,7 +20,7 @@ section{
 .tarrot{
   width:100%;
   display:block;
-  border: 10px solid purple;
+  border: 10px solid pink;
 }
 
 #button{
